@@ -45,7 +45,7 @@ namespace CarvedRock.Backend
             }
 
             if (applyDiscount && discountPercentage > 0 && discountPercentage <= 0.1)
-                SalePrice *= (1 + discountPercentage);
+                SalePrice *= (1 - discountPercentage);
 
             SalePrice = Math.Round(SalePrice, 2);
         }
