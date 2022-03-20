@@ -1,0 +1,5 @@
+﻿1;Basic walking shoes;Go where you want with these;95.15;87;InStock;047Y;2;Black;Leather; true
+2;Go Up Climbers;Ready to take on all mountains;178.44;23;InStock;77PL;3;Green;Textile;true;Indoor climbing
+3;CyclerPowX;Get the best in class;126.36;54;InStock;EEF6;4;Black;Leather;true;All terrain
+4;CyclerPowX Plus;Now even better;146.77;0;ComingSoon;EEF7;4;Black;Leather;true;All terrain
+5;CyclerPowX Ultimate;Nothing can beat this shoe;198.25;15;InStock;EEF8;4;Black;Leather;true;All terrain
