@@ -15,9 +15,9 @@ namespace CarvedRock.Backend
         public int AmountInStock { get; set; }
         public ProductStatus ProductStatus { get; set; }
         public double SalePrice { get; set; }
-        public string ProductCode { get; set; }
+        
 
-        public Product(int id, string name, string description, double basePrice, int amountInStock, ProductStatus productStatus, string productCode)
+        public Product(int id, string name, string description, double basePrice, int amountInStock, ProductStatus productStatus)
         {
             Id = id;
             Name = name;
@@ -25,14 +25,14 @@ namespace CarvedRock.Backend
             BasePrice = basePrice;
             AmountInStock = amountInStock;
             ProductStatus = productStatus;
-            ProductCode = productCode;
+            
 
             CalculateSalePrice(false);
         }
 
         public string DisplayProduct()
         {
-            return $"Product ID: {Id}\nProduct name: {Name}\nDescription: {Description}\nBase Price: {string.Format(new System.Globalization.CultureInfo("en-US"), "{0:C2}", BasePrice)}\nSale Price:{string.Format(new System.Globalization.CultureInfo("en-US"), "{0:C2}", SalePrice)}\nAmount in stock: {AmountInStock}\nProduct status: {ProductStatus}\nProduct Code: {ProductCode}";
+            return $"Product ID: {Id}\nProduct name: {Name}\nDescription: {Description}\nBase Price: {string.Format(new System.Globalization.CultureInfo("en-US"), "{0:C2}", BasePrice)}\nSale Price:{string.Format(new System.Globalization.CultureInfo("en-US"), "{0:C2}", SalePrice)}\nAmount in stock: {AmountInStock}\nProduct status: {ProductStatus}";
         }
 
         public void CalculateSalePrice(bool applyDiscount, double marginOfProfit = 0.17, double discountPercentage = 0)
